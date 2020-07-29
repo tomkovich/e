@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/styles.css">
+	
+	<link nes rel="icon" sizes="192x192" href="img/flaticon192.ico" />
+	<link nes rel="icon" sizes="128x128" href="img/flaticon128.ico" />
+	<link nes rel="apple-touch-icon" href="https://www.nike.com/apple-touch-icon.png" />
+	<link nes rel="apple-touch-icon" sizes="76x76" href="img/flaticon76.ico" />
+	<link nes rel="apple-touch-icon" sizes="152x152" href="img/flaticon152.ico" />
+
+	<title>E-STADO</title>
+</head>
+<body>
+	<section class="s_main">
+		<div class="clouds">
+			<img src="img/clouds.png" alt="clouds">
+		</div>
+
+		<header class="header">
+			<div class="logo">
+				<img src="img/logo.svg" alt="e-stado">
+			</div>
+			<div class="header_text">
+				<h1>
+					Система комплексного мониторинга 
+					состояния молочных коров
+				</h1>
+			</div>
+		</header>
+		<div class="b_information">
+			<p class="b_information__subtitle">
+				Ответьте на 3 вопроса и узнайте
+			</p>
+			<div class="b_information__info">
+				<h2>
+					Как <span>увеличить удой каждой коровы 
+					до 15%</span> путем
+				</h2>
+			</div>
+			<ul class="b_information__list">
+				<li>
+					<span class="icon">
+						<img src="img/icon.svg" alt="info">
+					</span>
+					<div class="b_information__list--item">
+						<h3>
+							Своевременного 
+							определения половой охоты
+						</h3>
+						особенно если она не заметна 
+						по внешним признакам
+					</div>
+				</li>
+				<li>
+					<span class="icon">
+						<img src="img/icon.svg" alt="info">
+					</span>
+					<div class="b_information__list--item">
+						<h3>
+							Анализом состояния 
+							здоровья коровы
+						</h3>
+						при наблюдении за жвачкой, 
+						активностью и температурой тела
+					</div>
+				</li>
+				<li>
+					<span class="icon">
+						<img src="img/icon.svg" alt="info">
+					</span>
+					<div class="b_information__list--item">
+						<h3>
+							Выявление хромоты
+						</h3>
+						предупреждением 
+						и выявлением развития 
+						хромоты
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="s_quiz">
+			<form class="s_quiz__form" method="post">
+				<ul class="progressbar">
+					<li class="active"></li>
+					<li>
+						<span class="progressbar_indicator"></span>
+					</li>
+					<li><span class="progressbar_indicator"></span></li>
+				</ul>
+				<div class="tab_content">
+					<div class="tab_pane active" data-step="1">
+						<div class="s_quiz__form--info">
+							Вопрос 1
+						</div>
+						<div class="s_quiz__form--question">
+							Сколько у вас <span>дойных коров?</span>
+						</div>
+						<div class="s_quiz__form--input">
+							<input type="number" name="quantity" min="0" placeholder="Например: 45" required>
+						</div>
+					</div>
+
+					<div class="tab_pane" data-step="2">
+						<div class="s_quiz__form--info">
+							Вопрос 2
+						</div>
+						<div class="s_quiz__form--question">
+							Сколько <span> молока в сутки вы доите? </span>
+						</div>
+						<div class="s_quiz__form--input">
+							<input type="number" name="value" min="0" placeholder="Например: 12" required>
+						</div>
+					</div>
+
+					<div class="tab_pane tab_pane__checked" data-step="3">
+						<div class="s_quiz__form--info">
+							Вопрос 3
+						</div>
+						<div class="s_quiz__form--question">
+							<span>Вы являетесь?</span>
+						</div>
+						<div class="s_quiz__form--input">
+							<input type="radio" name="position" value="lead" checked>
+							<label for="lead">Руководителем фермы</label>
+						</div>
+						<div class="s_quiz__form--input">
+							<input type="radio" name="position" value="zootechnician">
+							<label for="zootechnician">Зоотехником</label>
+						</div>
+						<div class="s_quiz__form--input">
+							<input type="radio" name="position" value="veterinarian">
+							<label for="veterinarian">Ветеринаром</label>
+						</div>
+					</div> 
+
+
+					<div class="tab_pane tab_pane__checked feedback" data-step="4">
+						<div class="s_quiz__form--question">
+							<span>Куда прислать вам ответ?</span>
+						</div>
+						<div class="s_quiz__form--wrapper">
+							<div class="s_quiz__form--input">
+								<input type="radio" name="feedback" value="phone_number" data-target="phone_number" checked>
+								<label for="phone">По телефону</label>
+							</div>
+							<div class="s_quiz__form--input">
+								<input type="radio" name="feedback" value="email" data-target="email">
+								<label for="email">E-mail</label>
+							</div>
+							<div class="s_quiz__form--input">
+								<input type="radio" name="feedback" value="viber" data-target="viber">
+								<label for="viber">Viber</label>
+							</div>
+							<div class="s_quiz__form--input">
+								<input type="radio" name="feedback" value="telegram " data-target="telegram">
+								<label for="telegram">Telegram</label>
+							</div>
+							<div class="s_quiz__form--input">
+								<input type="radio" name="feedback" value="whatsapp" data-target="whatsapp">
+								<label for="whatsapp">Whatsapp</label>
+							</div>
+						</div>
+
+
+						<div class="s_quiz__form--feedback active" data-target="phone_number">
+							<label for="phone_number" >Введите ваш номер телефона</label>
+							<input 
+							type="text"
+							name="phone_number"
+							data-format="(**) ***-**-**" 
+							data-mask="(__) ___-__-__">
+						</div>
+
+						<div class="s_quiz__form--feedback" data-target="email">
+							<label for="email" >Введите ваш e-mail</label>
+							<input 
+							type="email" 
+							name="email">
+						</div>
+
+						<div class="s_quiz__form--feedback" data-target="viber">
+							<label for="phone_number" >Введите ваш номер телефона</label>
+							<input 
+							type="text"
+							name="viber"
+							data-format="(**) ***-**-**" 
+							data-mask="(__) ___-__-__">
+						</div>
+
+						<div class="s_quiz__form--feedback" data-target="whatsapp">
+							<label for="phone_number" >Введите ваш номер телефона</label>
+							<input 
+							type="text"
+							name="whatsapp"
+							data-format="(**) ***-**-**" 
+							data-mask="(__) ___-__-__">
+						</div>
+
+						<div class="s_quiz__form--feedback" data-target="telegram">
+							<label for="phone_number" >Введите ваш логин telegram</label>
+							<input 
+							type="text"
+							placeholder="@tomkovich_ya"
+							name="telegram">
+						</div>
+
+
+					</div>
+				</div>
+
+				<button type="button" class="next_btn">
+					<div class="next_btn__content">
+						Далее
+						<img src="img/arrow.svg" alt="arrow" class="img_arrow">
+					</div>
+				</button>
+
+				<button type="submit" class="submit_btn">
+					<div class="next_btn__content">
+						Отправить и получить ответ
+					</div>
+				</button>
+			</form>
+		</div>
+
+		<div class="cow">
+			<img src="img/cow.png" alt="cow">
+		</div>
+		<div class="bush2">
+			<img src="img/bush2.png" alt="bush">
+		</div>
+		<div class="bush1">
+			<img src="img/bush1.png" alt="bush">
+		</div>
+		<div class="bush3">
+			<img src="img/bush.png" alt="bush">
+		</div>
+
+	</section>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
